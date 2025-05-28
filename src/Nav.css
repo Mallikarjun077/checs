@@ -1,0 +1,62 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+#nav {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+  background: rgba(4, 4, 4, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Logo */
+.checs {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+/* Navigation Links */
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .checs {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  #nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    
+  }
+}
