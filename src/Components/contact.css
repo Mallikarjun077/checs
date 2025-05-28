@@ -1,4 +1,3 @@
-Reset and base styling
 * {
   margin: 0;
   padding: 0;
@@ -10,41 +9,77 @@ Reset and base styling
   justify-content: space-around;
   background: rgb(13, 21, 43);
   color: white;
-  padding: 40px;
+  /* padding: 40px 20px; */
   gap: 20px;
-  
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .contact-section {
-  flex: 1 1 300px; 
- 
+  flex: 1 1 400px;
   border-radius: 10px;
-  min-width: 280px;
+  width: 100%;
+  /* min-width: 280px; */
+  padding: 10px;
+}
+
+.contact-section img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .contact-section h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  position: relative;
-  right: 180px;
-  font-weight: bolder;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: start;
+  ;
   
+  
+  /* margin-bottom: 10px; */
 }
 
 .contact-section p {
-  font-size: 1.3rem;
-  
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+  /* gap: 10px; */
+  /* padding-left: 5px; */
 }
+
+.contact h4{
+  font-size: 1.2rem;
+  /* position: relative;
+  right: 410px;
+  bottom: 30px; */
+  
+}
+
 
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .contact-section {
-    width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    max-height: fit-content;
+    text-align: center;
+  }
+
+  /* .contact-section h1,
+  .contact-section h4,
+  .contact-section p {
+    text-align: center;
+    padding-left: 0;
+  } */
+
+  .contact-section p {
+    margin-left: 15px;
   }
 }

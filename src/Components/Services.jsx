@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <>
     <h1 style={{fontSize:'35px'}}>SERVICES</h1>
-    <p style={{textAlign:'center',fontSize:'25px',position:'relative',bottom:'30px'}}>We offer a comprehensive suite of engineering and design services to help you bring your ideas to life.</p>
+    <p style={{textAlign:'center',fontSize:'25px',position:'relative',bottom:'20px'}}>We offer a comprehensive suite of engineering and design services to help you bring your ideas to life.</p>
     <div className='serv'>
       <div className="services">
         <div className="serv2">
@@ -74,7 +74,10 @@ We also handle In-House Projects.</p>
       </div>
       </div>
       <h1 style={{fontSize:"50px"}}>We Are Unique</h1>
-      <p style={{fontSize: '25px',position:'relative',bottom:'70px' ,textAlign:'center',margin:'50px',lineHeight:'1.5'}}>In the fast-paced world of today, it can be difficult for both individuals and organizations to stay up to date with changing knowledge and abilities. CHECS stands out as a symbol of adaptability and commitment in the face of these changing demands. Personalized training, problem-solving, and project solutions that can be delivered at any time and from any location. The customer-centric approach implies that the solutions are flexible and client-centered.</p>
+      <p className="checs-description">
+  In the fast-paced world of today, it can be difficult for both individuals and organizations to stay up to date with changing knowledge and abilities. CHECS stands out as a symbol of adaptability and commitment in the face of these changing demands. Personalized training, problem-solving, and project solutions that can be delivered at any time and from any location. The customer-centric approach implies that the solutions are flexible and client-centered.
+</p>
+
     </>
   )
 }

@@ -1,62 +1,74 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Navigation Bar */
-#nav {
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  height: 70px;
-  background: rgba(4, 4, 4, 0.85);
+.nav {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
   position: fixed;
+  z-index: 1000;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000;
-  font-family: 'Trebuchet MS', sans-serif;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* Logo */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .checs {
-  height: 50px;
-  width: 50px;
-  margin-right: 20px;
+  height: 40px;
+  margin-left: 50px;
 }
 
-/* Navigation Links */
-#nav a {
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  margin: 0 15px;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-
-
-/* Responsive Design */
+/* Mobile Styles */
 @media (max-width: 768px) {
-  #nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-    height: auto;
-  }
-
-  .checs {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 10px;
-  }
-
-  #nav a {
+  .hamburger {
     display: block;
-    margin: 8px 0;
-    font-size: 16px;
+    position: relative;
+    left: 220px;
+   
     
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    /* border-top: 1px solid #444; */
   }
 }

@@ -33,7 +33,7 @@ const Infrastructure = () => {
 
   
   const meshingImages = [img6, img8, img7, img5];
-  const analysisImages = [img1];
+  const analysisImages = [img1,];
   const designImages = [img2, img4, img9, img3]; 
 
   
@@ -142,8 +142,14 @@ const Infrastructure = () => {
             onClick={() => openPopup(setMeshingIndex, setMeshingOpen, i)} 
             style={{cursor: 'pointer'}}
           >
-            <img src={img} alt={`meshing-${i}`} style={{width: 150}} />
+                  <figure className="mesh-figure">
+  <img src={img} alt={`meshing-${i}`} />
+  <figcaption style={{color:"black"}}>Solid Mesh {i+ 1}</figcaption>
+</figure>
+            {/* <img src={img} alt={`meshing-${i}`} style={{width: 210}} /> */}
+            
           </div>
+          
         ))}
       </div>
 
@@ -157,7 +163,11 @@ const Infrastructure = () => {
             onClick={() => openPopup(setAnalysisIndex, setAnalysisOpen, i)} 
             style={{cursor: 'pointer'}}
           >
-            <img src={img} alt={`analysis-${i}`} style={{width: 150}} />
+                <figure className="mesh-figure">
+                              <img src={img} alt={`analysis-${i}`} style={{width: 350}} />
+
+  <figcaption style={{color:"black"}}>Customer Models, QPS</figcaption>
+</figure>
           </div>
         ))}
       </div>
@@ -172,7 +182,12 @@ const Infrastructure = () => {
             onClick={() => openPopup(setDesignIndex, setDesignOpen, i)} 
             style={{cursor: 'pointer'}}
           >
-            <img src={img} alt={`design-${i}`} style={{width: 150}} />
+             
+                        <img src={img} alt={`design-${i}`} style={{width: 210}} />
+                        
+
+  
+
           </div>
         ))}
       </div>

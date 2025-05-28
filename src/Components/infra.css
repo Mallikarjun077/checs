@@ -10,11 +10,11 @@ h1 {
 
 .infra {
   display: flex;
-  
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 20px;
   gap: 20px;
+  /* flex-wrap: wrap; Allow content to wrap on small screens */
 }
 
 .infra img {
@@ -30,25 +30,45 @@ h1 {
   font-size: 20px;
   line-height: 1.6;
   width: 70%;
- 
   font-family: 'Arial', sans-serif;
+  text-align: justify;
 }
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .infra {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .infra img {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .infra p {
+    width: 90%;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
   padding: 20px;
 }
 .menu1{
     border-radius: 10px;
-    height: 300px;
-    width: 300px;
-    background: #509fef;
+    height: 250px;
+    width: 250px;
+    background: #69abed;
     color: white;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 45px;
     
 }
 .menu1 img{
@@ -58,7 +78,7 @@ h1 {
 }
 .menu1 h2 {
     padding-top: 40PX;
-    font-size: 20px;
+    font-size: 18px;
    
 }
 
@@ -101,7 +121,7 @@ h1 {
   padding: 20px;
   border-radius: 20px;
   color: white;
-  max-width: 1200px;
+  max-width: 1150px;
   
 }
 body .cap{
@@ -128,6 +148,7 @@ body .cap{
   
 }
 
+
 .pop {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -153,7 +174,8 @@ body .cap{
   }
 
   .cap1 {
-    flex-direction: column;
+    flex-direction: initial;
     text-align: center;
+    ;
   }
 }
