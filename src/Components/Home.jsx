@@ -38,9 +38,11 @@ const Home = () => {
   };
 
   const settings = {
-    dots: true,
-    arrows: false,
-  };
+  arrows: true,    
+  dots: true,      
+  speed: 500,
+};
+
 
   return (
     <div className="slider-container">

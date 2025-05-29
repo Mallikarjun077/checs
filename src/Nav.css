@@ -21,7 +21,7 @@
 
 .checs {
   height: 40px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .hamburger {
@@ -49,10 +49,11 @@
   .hamburger {
     display: block;
     position: relative;
-    left: 220px;
+    left: 200px;
    
     
   }
+  
 
   .nav-links {
     display: none;

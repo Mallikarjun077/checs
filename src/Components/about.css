@@ -15,7 +15,7 @@
 
 h1 {
   text-align: center;
-  padding: 5%;
+  margin-top: 20px;
 }
 
 .about p {
@@ -39,6 +39,7 @@ h1 {
 
 /* ---------- Responsive Styles ---------- */
 @media (max-width: 768px) {
+  
   .about {
     flex-direction: column;
     align-items: center;
@@ -57,4 +58,5 @@ h1 {
     height: auto;
     right: 0;
   }
+ 
 }

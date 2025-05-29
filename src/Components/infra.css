@@ -163,19 +163,20 @@ body .cap{
     text-align: center;
   }
 
-  .infra p {
+  /* .infra p {
     padding-left: 0;
-  }
+  } */
 
   .menu2 {
     width: 100%;
     max-width: 300px;
+    margin-bottom: 20px;
     
   }
 
   .cap1 {
     flex-direction: initial;
-    text-align: center;
+    text-align: left;
     ;
   }
 }

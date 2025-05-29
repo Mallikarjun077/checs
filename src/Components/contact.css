@@ -71,7 +71,10 @@
     max-height: fit-content;
     text-align: center;
   }
-
+.contact h4{
+  text-align: left;
+  margin-left: 20px;
+}
   /* .contact-section h1,
   .contact-section h4,
   .contact-section p {

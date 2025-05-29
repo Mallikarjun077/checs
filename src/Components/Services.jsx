@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <>
     <h1 style={{fontSize:'35px'}}>SERVICES</h1>
-    <p style={{textAlign:'center',fontSize:'25px',position:'relative',bottom:'20px'}}>We offer a comprehensive suite of engineering and design services to help you bring your ideas to life.</p>
+    <p style={{textAlign:'center',fontSize:'25px',position:'relative',bottom:'10px'}}>We offer a comprehensive suite of engineering and design services to help you bring your ideas to life.</p>
     <div className='serv'>
       <div className="services">
         <div className="serv2">
